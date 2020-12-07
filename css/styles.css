@@ -148,6 +148,9 @@ img {
     letter-spacing: 0.02em;
     color: #757575;
 
+    display: flex;
+    align-items: center;
+
 }
 
 .header-address-li:not(:last-child) {
@@ -157,11 +160,13 @@ img {
 .icon-envelope {
     width: 16px;
     height: 12px;
+    margin-right: 10px;
 }
 
 .icon-vector {
     width: 10px;
     height: 16px;
+    margin-right: 10px;
 }
 
 .header-address-link:hover, .header-address-link:focus {
@@ -169,7 +174,9 @@ img {
 }
 
 .header-address-link:hover .icon-envelope,
-.header-address-link:hover .icon-vector{
+.header-address-link:hover .icon-vector,
+.header-address-link:focus .icon-envelope,
+.header-address-link:focus .icon-vector{
     fill: #2196F3;
 }
 
@@ -240,7 +247,7 @@ img {
     background: #F5F4FA;
     border-radius: 4px;
     width: 270px;
-    height: 170px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -593,14 +600,17 @@ img {
     max-width: 370px;
 }
 
-.portfolio-card:hover {
+.portfolio-card-link:hover, .portfolio-card-link:focus{
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    outline: none;
 }
-
 
 .portfolio-card:nth-child(3n) {
     margin-right: 0;
 }
+
+
+
 
 .portfolio-card:nth-child(n + 7) {
     margin-bottom: 0;
@@ -618,6 +628,8 @@ img {
 
 .portfolio-card a {
     text-decoration: none;
+    display: inline-block;
+    /*outline: none;*/
 }
 
 
