@@ -162,16 +162,17 @@ img {
 .icon-envelope {
     width: 16px;
     height: 12px;
-    /*margin-right: 10px;*/
     margin: 3px 10px 3px 0;
 }
 
 .icon-vector {
     width: 10px;
     height: 16px;
-    /*margin-right: 10px;*/
     margin: 3px 10px 3px 0;
 }
+
+
+
 
 .header-address-link:hover, .header-address-link:focus {
     color: #2196F3;
